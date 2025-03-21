@@ -1,0 +1,194 @@
+:root{
+    --cor-primaria: #ffffff;
+    --cor-secundaria: #c9c8c8; 
+    --cor-de-botao-azul: #2873d4;
+    --cor-de-fundo: #000042;
+    --cor-de-titulo: #FE497B;
+    --fonte-principal: 'inter'
+    --botao-azul-efeito: #3c92fa; /*quando passar o mouse no botao ele muda de cor*/
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*PRIMEIRA PAGINA*/
+
+.principal{
+    background-image: url("/img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.titulo__principal{
+    color: var(--cor-secundaria);
+    font-size: 25px;  
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+.container__botao{
+    background-color: var(--cor-de-botao-azul);
+    border-radius: 50px;
+    padding: 1em;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1em 2em; 
+    margin-top: 23em;
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cor-primaria)
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.container__imagem {
+    margin: 8px 0 8px 0;
+}
+
+/*SEGUNDA PAGINA DO PROJETO*/
+
+.secundario__imagem {
+    /*width: 1; /* posiciona imagem em pagina inteira*/
+    margin: 0px 0 0px 0;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--cor-primaria);
+    margin-bottom: 0.1em; 
+    margin-top: 8em; /* coloquei a escrita para o meio da tela sem usar text aligner*/
+    margin-left: 2em;
+}
+
+.descricao__texto {
+    color: var(--cor-primaria);
+    margin-left: 5em;
+    font-size: 22px;
+    margin-top: 2em;
+}
+
+.descricao__texto__dois{
+    color: var(--cor-primaria);
+    margin-left: 7em;
+    font-size: 16px;
+    margin-top: 2em; 
+}
+
+.container__descricao {
+    padding: 1em;
+}
+
+/*TERCEIRA PAGINA DO PROJETO*/
+
+.destino{
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-de-botao-azul);
+    margin-top: 1em;
+}
+
+.destino__form{
+    padding: 1em;
+    list-style-type: none;
+}
+
+.destino__form__campos{
+    color: var(--cor-primaria);  
+}
+
+.layout__form{
+    border-radius: 50px;
+    border: var(--cor-de-fundo);
+}
+
+.buton__form{
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-primaria);
+    border-radius: 50px;
+    padding: 8px 16px 8px 16px;
+    border: solid var(--cor-de-fundo);
+}
+
+.dispositivos__titulo{
+    color: var(--cor-de-titulo);
+    font-size: 32px;
+    padding-top: 16px;
+}
+
+.dispositivos__principal {
+    text-align: center;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.lista__item {
+    font-size: 20px;
+    margin-top: 1em;
+    border-radius: 50px;
+    background-color: var(--cor-de-titulo);
+    padding: 3px 1px 3px 1px ;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: block;
+}
+
+/*BARRA REDE SOCIAL*/
+
+.container__imagem_final{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    background-color: var(--cor-de-botao-azul);
+   }
+
+.final_contato{
+    display: flex;
+    justify-content: center;
+    color: var(--cor-primaria);
+    margin-left: 5em;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.imagem_redesocial{
+    padding: 5px;
+}
+
+/*FOOTER - RODAPÉ*/
+
+.rodape{
+	text-align: center;
+	background-color: var(--cor-de-titulo);
+	padding: 8px;
+	color: #fff;
+}
+
